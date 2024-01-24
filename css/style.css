@@ -1,0 +1,34 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#container {
+  text-align: center;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.taskItem {
+  margin-bottom: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+#buttonGroup {
+  margin-top: 10px;
+}
+
+#buttonGroup button {
+  margin-right: 10px;
+}

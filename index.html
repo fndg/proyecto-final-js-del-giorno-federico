@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
+
+    <div id="container">
+        <h1>Lista de Tareas</h1>
+
+        <form id="taskForm">
+            <input type="text" id="newTask" placeholder="Nueva tarea" />
+            <button type="submit" onclick="addTask()">Agregar tarea</button>
+        </form>
+        
+        <div id="buttonGroup">
+            <button type="button" onclick="clearTasks()">Eliminar todas</button>
+            <button type="button" onclick="completeAllTasks()">Marcar todas como realizadas</button>
+            <button type="button" onclick="uncheckAllTasks()">Desmarcar todas</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="./js/index.js"></script>
+
 </body>
 </html>
